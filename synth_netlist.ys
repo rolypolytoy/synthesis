@@ -1,0 +1,27 @@
+read_verilog ./a2o-master/dev/verilog/unisims_synth
+read_verilog -I./a2o-master/dev/verilog/trilib ./a2o-master/dev/verilog/trilib/*
+read_verilog -I./a2o-master/dev/verilog/trilib ./a2o-master/dev/verilog/work/*
+# Aggressive processing and optimization
+proc           # Convert processes to logic
+opt            # Initial optimization
+# More destructive optimizations
+opt_clean      # Remove unused cells and wires
+opt_expr       # Optimize expressions
+opt_reduce     # Reduce logic depth
+opt_merge      # Merge logic blocks
+# Memory and logic mapping
+memory         # Handle memory elements
+memory_libmap  # Map memory to library primitives
+techmap        # Technology mapping
+# Very aggressive cleanup
+clean
+opt_clean      # Clean again after mapping
+setundef -zero # Replace undefined values with zero
+opt            # Final optimization
+# Map to primitive gates (using standard cell library)
+abc -liberty      # Use default liberty for standard gates
+# Final cleanup
+clean
+opt_clean
+# Write minimal netlist
+write_verilog -noattr netlist.v
