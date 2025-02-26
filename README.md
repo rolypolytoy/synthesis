@@ -54,7 +54,7 @@ To install Yosys:
 Then:
 	git clone https://github.com/rolypolytoy/synthesis
 
-If you want to synthesize it yourself- refer to synth_netlist.ys, navigate to it in your command line, and then:
+Unzip the a2o-master file, and remove the duplicate of it (it shouldn't be a2o-master inside a2o-master, remove the recursion if you want the synthesis to function correctly.) If you want to synthesize it yourself- refer to synth_netlist.ys, navigate to it in your command line, and then:
 
 	yosys synth_netlist.ys
 
