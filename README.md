@@ -45,7 +45,7 @@ Synthesis basically converts the he says-she says that's the reality of a reposi
 For example, do you want it to output a gate-level netlist- essentially just a text-based representation of the logic gates that make it up and how they connect? Do you want it to use the SKY130 node, or any one of the several other process nodes it allows you to synthesize based on? Which one you pick is determined entirely by what commercial process you intend to make your chip using, and once you've got a synthesized output that's passing all tests, after a few cursory steps all you've got to do is send it to a foundry to get fabricated, and you've got a functioning chip.
 
 ## A2O OpenPOWER Chip
-The chip I've synthesized here is the A2O chip (https://github.com/OpenPOWERFoundation/a2o).  It's a 2000s-era CPU open-sourced by IBM, that uses the POWER7 ISA, and it's written entirely in Verilog, which means it's possible for us to synthesize it with Yosys. The copy of it in this repo is modified to remove a few errors in its header files, and because the license it has is Apache 2.0, the license of this project is also necessarily that. For more info on the Apache 2.0 license, refer to https://www.apache.org/licenses/LICENSE-2.0.
+The chip I've synthesized here is the A2O chip (https://github.com/OpenPOWERFoundation/a2o).  It's a 2000s-era CPU open-sourced by IBM, that uses the POWER7 ISA, and it's written entirely in Verilog, which means it's possible for us to synthesize it with Yosys. The copy of it in this repo is modified to remove a few errors in its header files and its synthesis code is heavily modified. Because the license it has is Apache 2.0, the license of this project is also necessarily that. For more info on the Apache 2.0 license, refer to https://www.apache.org/licenses/LICENSE-2.0.
 
 ## Dependencies
 I'd recommend a Linux environment, or at least WSL if you're using Windows.
@@ -54,7 +54,7 @@ To install Yosys:
 Then:
 	git clone https://github.com/rolypolytoy/synthesis
 
-Unzip the a2o-master file, and remove the duplicate of it (it shouldn't be a2o-master inside a2o-master, remove the recursion if you want the synthesis to function correctly.) If you want to synthesize it yourself- refer to synth_netlist.ys, navigate to it in your command line, and then:
+If you want to synthesize it yourself- refer to synth_netlist.ys, navigate to it in your command line, and then:
 
 	yosys synth_netlist.ys
 
