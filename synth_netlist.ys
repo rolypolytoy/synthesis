@@ -11,6 +11,7 @@ opt_expr
 opt_reduce     
 opt_merge
 
+#Memory handling steps, pretty standard
 memory
 memory_libmap  
 techmap 
