@@ -5,7 +5,7 @@ read_verilog -I./a2o-master/dev/verilog/trilib ./a2o-master/dev/verilog/work/*
 proc          
 opt 
 
-#You can remove this block if you have to- it's time intensive and really are just optimization steps, but I recommend at least opt_clean and opt_expr
+#You can remove this block if you have to- it's time intensive and really are just additional optimization steps, but I recommend at least opt_clean and opt_expr
 opt_clean
 opt_expr
 opt_reduce     
