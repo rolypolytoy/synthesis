@@ -71,6 +71,6 @@ Or, if you don't want to have to even go through synthesis, refer to netlist.v o
 
 ## Netlist to GDSII
 
-To take our gate-level netlist sky130.v and have production-ready GDSII files, we have further steps to do.
+To take our gate-level netlist sky130.v and have production-ready GDSII files, we have further steps to do. These are the next steps of the project
 
-You now have a gate-level netlist of an entire CPU on your computer. 
+For now- you now have a gate-level netlist of an entire CPU on your computer. Download netlist.v or sky130.v for a gate-level netlist of the A2O core, or synthesize it yourself for your own enjoyment.
