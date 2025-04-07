@@ -71,6 +71,6 @@ Or, if you don't want to have to even go through synthesis, refer to netlist.v o
 
 ## Netlist to GDSII
 
-To take our gate-level netlist sky130.v and have production-ready GDSII files, we have further steps to do. These are the next steps of the project
+To take our gate-level netlist sky130.v and have production-ready GDSII files, we have further steps to do. The next steps of this project requires going from a netlist to a floorplan, doing placement, CTS, routing, and then generating GDSII files from this. Future projects in this vein will implement these for the sky130 nm node. Keep in mind, due to the open-source nature of OpenROAD, several other nodes can be made with this pipeline including Globalfoundries 180nm, Nangate45, ASAP7, and more. With commercial tools such as Synopsys and Cadence, virtually all modern semiconductor nodes can be made with processes even more streamlined than OpenROAD uses, which is less sophisticated than commercial solutions due to its open-source nature.
 
 For now- you now have a gate-level netlist of an entire CPU on your computer. Download netlist.v or sky130.v for a gate-level netlist of the A2O core, or synthesize it yourself for your own enjoyment.
