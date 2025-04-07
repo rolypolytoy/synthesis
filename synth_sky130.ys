@@ -1,0 +1,25 @@
+#REPLACE THIS WITH YOUR LOCATION
+read_verilog /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/unisims_synth
+read_verilog -I /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib/*
+read_verilog -I /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/work/*
+
+proc          
+opt 
+opt_clean
+opt_expr
+opt_reduce     
+opt_merge
+memory
+memory_libmap  
+techmap 
+clean
+opt_clean    
+setundef -zero 
+opt          
+
+read_liberty -lib /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+clean
+opt_clean
+write_verilog -noattr /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/sky130.v
