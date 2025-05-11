@@ -1,0 +1,22 @@
+%Error: Cannot find file containing module: /openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v
+        ... Looked in:
+             /openlane/designs/a2o/src/trilib//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v
+             /openlane/designs/a2o/src/trilib//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.v
+             /openlane/designs/a2o/src/trilib//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.sv
+             /openlane/designs/a2o/src//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v
+             /openlane/designs/a2o/src//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.v
+             /openlane/designs/a2o/src//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.sv
+             /openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v
+             /openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.v
+             /openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.sv
+             obj_dir//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v
+             obj_dir//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.v
+             obj_dir//openlane/designs/a2o/src/work/fu_divsqrt_q_table.v,/openlane/designs/a2o/src/trilib/tri_nand3.v.sv
+%Error: Cannot find file containing module: /openlane/designs/a2o/src/trilib/tri_eccgen.v,/openlane/designs/a2o/src/unisims_synth/RAMB16_S9_S9.v
+%Error: /openlane/designs/a2o/src/unisims_synth/RAMB16_S36_S36.v:4:1: syntax error, unexpected ')', expecting IDENTIFIER or randomize
+    4 | ) (
+      | ^
+%Error: /openlane/designs/a2o/src/unisims_synth/RAMB16_S18_S18.v:4:1: syntax error, unexpected ')', expecting IDENTIFIER or randomize
+    4 | ) (
+      | ^
+%Error: Exiting due to 4 error(s)
