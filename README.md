@@ -5,6 +5,8 @@ Whenever I run the following [synthesis script](https://github.com/rolypolytoy/s
 
 Simply uncommenting the \\ behind the critical piece of logic enables full synthesis with the aforementioned script, or just using this [fork](https://github.com/rolypolytoy/a2o) of the repo fixes this.
 
+So, when using [this synthesis script](https://github.com/rolypolytoy/synthesis/blob/main/synth_sky130.ys) on that repo gives this [netlist](https://github.com/rolypolytoy/synthesis/blob/main/sky130.v) as an output. 
+
 ## Dependencies
 I'd recommend a Linux environment, or at least WSL if you're using Windows.
 To install Yosys:
