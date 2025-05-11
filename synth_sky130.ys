@@ -1,4 +1,3 @@
-#REPLACE THIS WITH YOUR LOCATION
 read_verilog /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/unisims_synth
 read_verilog -I /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib/*
 read_verilog -I /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/trilib /mnt/c/Users/rishi/Downloads/synthesis-main/synthesis-main/a2o-master/dev/verilog/work/*
