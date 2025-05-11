@@ -23,3 +23,7 @@ Or, use yosys synth_sky130.ys if you want to synthesize a netlist compatible wit
 It should output, in the same repository, a file called netlist.v, or sky130.v
 
 Or, if you don't want to have to even go through synthesis, refer to netlist.v or sky130.v.
+
+## RTL to GDSII
+
+Currently working on checking if A2O can be fully run on OpenLANE from RTL to GDSII. 
