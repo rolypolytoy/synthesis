@@ -28,4 +28,4 @@ Or, if you don't want to have to even go through synthesis, refer to netlist.v o
 
 ## RTL to GDSII
 
-Currently working on checking if A2O can be fully run on OpenLANE from RTL to GDSII. 
+Currently working on doing the full RTL to GDSII workflow with A2O or another CPU. 
